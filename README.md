@@ -25,12 +25,56 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Part 1: Create our Resources in Azure
+- Part 2a: Observe ICMP Traffic
+- Part 2b: Observe SSH Traffic
+- Part 2c: Observe DHCP Traffic
+- Part 2d: Observe DNS Traffic
+- Part 2e: Observe RDP Traffic
 
 <h2>Actions and Observations</h2>
+<h3>Part 1: Create our Resources in Azure </3>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+- Part 1: Create a Resource Group
+  - Create a Windows 10 Virtual Machine (VM)
+  - While creating the VM, select the previously created Resource Group
+  - While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet
+  - Create a Linux (Ubuntu) VM
+  - While create the VM, select the previously created Resource Group and Vnet
+  - Observe Your Virtual Network within Network Watcher
+
+<br />
+
+<h3> Part 2 Observe SSH Traffic </h3>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+- Back in Wireshark, filter for SSH traffic only
+- From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
+  - open cmd or powershell
+  - type ssh labuser@10.0.0.5 (this is the username for the ubuntu machine)
+  - type yes to comfirm your action
+  - type the password for the ubuntu machine
+  - Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
+- observe the wireshark for all SSH activities in the ubuntu machine
+- Exit the SSH connection by typing ‘exit’ and pressing [Enter]
+
+<br />
+
+<h3> Part 2 Observe SSH Traffic </h3>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -40,6 +84,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 <br />
 
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -47,6 +92,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
