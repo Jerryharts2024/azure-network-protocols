@@ -117,7 +117,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3> Part 2c: Observe DHCP Traffic </h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
+<img src="https://user-images.githubusercontent.com/131130119/235443631-24f57258-4c06-49d1-9d63-4415567a5a33.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Back in Wireshark, filter for DHCP traffic only
@@ -128,7 +128,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3> Part 2d: Observe DNS Traffic </h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
+<img src="https://user-images.githubusercontent.com/131130119/235443896-d35e4598-9c36-4d9c-ac71-1380006e9c63.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Back in Wireshark, filter for DNS traffic only
@@ -139,9 +139,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <br />
 
-
+<h3>Part 2e: Observe RDP Traffic </h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
+<img src="https://user-images.githubusercontent.com/131130119/235444527-a10e2dd5-ddd8-4f6b-9e5d-c3cbba01b10c.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
