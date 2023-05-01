@@ -36,8 +36,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h3>Part 1: Create our Resources in Azure </3>
 
 <p>
-<img src="https://user-images.githubusercontent.com/131130119/235439306-2622fd5e-4a38-4190-8487-f74975b7feac.png
-" height="80%" width="80%" alt="Network Security Groups"/>
+<img src="https://user-images.githubusercontent.com/131130119/235441444-bce9dbf8-7153-41b2-8ad3-ce2e89db42a1.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Create a Windows 10 Virtual Machine (VM)
@@ -80,10 +79,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   - Open the Network Security Group your Ubuntu VM is using and disable incoming (inbound) ICMP traffic
   - Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity
   - Re-enable ICMP traffic for the Network Security Group your Ubuntu VM is using
+
+<p>
+<img src="https://user-images.githubusercontent.com/131130119/235441789-9596cc38-2482-44e6-a0e5-15df9babe82c.png" height="80%" width="80%" alt="Network Security Groups"/>
+</p>
+
   - Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (should start working)
   - Stop the ping activity
-
-
 
 <br />
 
@@ -91,11 +93,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h3> Part 2b Observe SSH Traffic </h3>
 
 <p>
-<img src="" height="80%" width="80%" alt="Network Security Groups"/>
+<img src="https://user-images.githubusercontent.com/131130119/235442500-f6647c30-0a05-4247-bbc7-0b2f49f0bbcd.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
+<img src="https://user-images.githubusercontent.com/131130119/235442306-c78717ee-ea44-4423-b9b0-55bdcffa4b5b.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 <p>
   To observe SSH traffic
