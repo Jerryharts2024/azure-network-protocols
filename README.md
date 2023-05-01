@@ -39,21 +39,24 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Part 1: Create a Resource Group
-  - Create a Windows 10 Virtual Machine (VM)
+-Create a Windows 10 Virtual Machine (VM)
   - While creating the VM, select the previously created Resource Group
   - While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet
   - Create a Linux (Ubuntu) VM
   - While create the VM, select the previously created Resource Group and Vnet
-  - Observe Your Virtual Network within Network Watcher
+- Observe Your Virtual Network within Network Watcher
 
 <br />
 
-<h3> Part 2 Observe SSH Traffic </h3>
+<h3> Part 2b Observe SSH Traffic </h3>
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-
+<p>
+  To observe SSH traffic
+</p>
+ 
 - Back in Wireshark, filter for SSH traffic only
 - From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
   - open cmd or powershell
@@ -66,7 +69,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <br />
 
-<h3> Part 2 Observe SSH Traffic </h3>
+<h3> Part 2c: Observe DHCP Traffic </h3>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
