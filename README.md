@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
+<img src="https://user-images.githubusercontent.com/131130119/235436639-e7b84a46-1ba6-4996-8871-d5ae77081298.JPG" alt="Traffic Examination"/>
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
@@ -36,22 +36,22 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h3>Part 1: Create our Resources in Azure </3>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Create a Windows 10 Virtual Machine (VM)
   - While creating the VM, select the previously created Resource Group
   - While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet
-  - Create a Linux (Ubuntu) VM
+- Create a Linux (Ubuntu) VM
   - While create the VM, select the previously created Resource Group and Vnet
-- Observe Your Virtual Network within Network Watcher
+  - Observe Your Virtual Network within Network Watcher
 
 <br />
 
 <h3> Part 2b Observe SSH Traffic </h3>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 <p>
   To observe SSH traffic
@@ -71,7 +71,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3> Part 2c: Observe DHCP Traffic </h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Back in Wireshark, filter for DHCP traffic only
@@ -82,7 +82,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3> Part 2d: Observe DNS Traffic </h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Back in Wireshark, filter for DNS traffic only
@@ -95,12 +95,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Security Groups"/>
 </p>
 
 - Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
-- Oserve the immediate non-stop spam of traffic? Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
-- Answer: because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted
+  - Observe the immediate non-stop spam of traffic? 
+- Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
+  - Answer: because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted
 
 
 <br />
